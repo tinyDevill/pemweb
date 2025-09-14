@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+p{
+    font-size: 17px;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -56,6 +60,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: black;
 }
@@ -69,6 +74,16 @@ main{
 
 .game_about h2{
     border-bottom: 2px solid white;
+}
+
+.game_about aside{
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #717171;
+    font-style: italic;
+    color: #d1d1d1;
 }
 
 main .review {
