@@ -1,0 +1,11 @@
+pyramid
+pyramid_tm
+sqlalchemy
+zope.sqlalchemy
+psycopg2-binary
+transformers
+torch
+google-generativeai
+cornice  # Membantu handle CORS dan REST di Pyramid
+waitress # WSGI Server
+python-dotenv

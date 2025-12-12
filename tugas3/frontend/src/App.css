@@ -1,0 +1,10 @@
+.container { max-width: 800px; margin: 0 auto; padding: 2rem; font-family: sans-serif; }
+.card { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #eee; }
+textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 4px; }
+button { background: #007bff; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 4px; cursor: pointer; }
+button:disabled { background: #ccc; }
+.badge { padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
+.badge.POSITIVE { background: #d4edda; color: #155724; }
+.badge.NEGATIVE { background: #f8d7da; color: #721c24; }
+.key-points pre { white-space: pre-wrap; font-family: inherit; background: #eef; padding: 10px; border-radius: 4px; }
+.error { color: red; margin-top: 0.5rem; }
