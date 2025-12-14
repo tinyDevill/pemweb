@@ -13,10 +13,10 @@ import transaction
 
 # --- KONFIGURASI ENV & API KEYS ---
 # Masukkan DATABASE_URL, HF_API_KEY, dan GEMINI_API_KEY anda
-DATABASE_URL = "postgresql://neondb_owner:npg_Hory0Okdq7jX@ep-misty-sunset-a903txac-pooler.gwc.azure.neon.tech/neondb?sslmode=require&channel_binding=require" # Ganti dengan link Database anda
+DATABASE_URL = "postgresql://user:password@ep-something.aws.neon.tech/dbname?sslmode=require" # Ganti dengan link Database anda
 HF_API_URL = "https://api-inference.huggingface.co/models/distilbert-base-uncased-finetuned-sst-2-english" # Ini tidak perlu diganti
-HF_API_KEY = "Bearer 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" # Ganti dengan Token Hugging Face Anda
-GEMINI_API_KEY = "AIzaSyDC6NqxouJVYBM_YL6myDWPtgEzyM5nkPo" # Ganti dengan API Key Google AI Studio Anda
+HF_API_KEY = "Bearer hf_xxxxxxxxxxxxxxxxxxxxxxxx" # Ganti dengan Token Hugging Face Anda
+GEMINI_API_KEY = "AIzaSy_xxxxxxxxxxxxxxxxxxxxxxx" # Ganti dengan API Key Google AI Studio Anda
 MODEL_NAME = 'gemini-2.5-flash' # Model yang akan digunakan
 
 # Inisialisasi Gemini Client
@@ -161,4 +161,5 @@ if __name__ == '__main__':
     
     print("\n--- Server running on http://localhost:6543 ---")
     from waitress import serve
+
     serve(app, host='0.0.0.0', port=6543)
