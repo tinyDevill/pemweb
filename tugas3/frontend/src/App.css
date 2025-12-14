@@ -1,0 +1,184 @@
+/* GLOBAL RESET & ROOT */
+html, body, #root {
+    height: 100%; /* Memastikan html dan root memiliki tinggi penuh */
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+
+    display: flex; /* Mengaktifkan Flexbox untuk body */
+    justify-content: center; /* Center horizontal */
+    align-items: flex-start; /* Konten dimulai dari atas layar */
+
+    min-height: 100vh; /* Memastikan body mencakup tinggi viewport penuh */
+    padding: 20px;
+    box-sizing: border-box; /* Memastikan padding tidak melebihi 100vh */
+}
+
+/* CONTAINER */
+.container {
+    width: 100%; /* Memenuhi lebar yang tersedia */
+    max-width: 800px; /* Membatasi lebar maksimal */
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* INPUT SECTION */
+.input-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: bold;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* LOADING SPINNER */
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ERROR MESSAGE */
+.error-msg {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* REVIEW GRID */
+.review-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* REVIEW CARD */
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #ddd;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* BADGE */
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 4px 10px;
+    border-radius: 20px;
+
+    background: #f3f4f6;
+}
+
+/* POSITIVE */
+.badge.POSITIVE {
+    background: #dcfce7;
+    color: #166534;
+    border-left-color: #22c55e;
+}
+
+.review-card:has(.POSITIVE) {
+    border-left-color: #22c55e;
+}
+
+/* NEGATIVE */
+.badge.NEGATIVE {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.review-card:has(.NEGATIVE) {
+    border-left-color: #ef4444;
+}
+
+/* REVIEW CONTENT */
+.review-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.key-points {
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.points-content p {
+    margin: 4px 0;
+    padding-left: 10px;
+    border-left: 2px solid #cbd5e1;
+}
+
+.date {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    font-size: 0.8em;
+    text-align: right;
+}
