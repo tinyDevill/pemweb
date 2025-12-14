@@ -1,0 +1,7 @@
+pyramid
+sqlalchemy
+psycopg2-binary
+requests
+google-genai
+zope.sqlalchemy
+waitress
